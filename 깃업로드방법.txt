@@ -1,0 +1,18 @@
+C:\Users\user1>cd C:\myWebPage
+
+C:\myWebPage>git init
+Initialized empty Git repository in C:/myWebPage/.git/
+
+C:\myWebPage>git remote add origin https://github.com/skssg/FirstWebPage.git
+fatal: detected dubious ownership in repository at 'C:/myWebPage'
+'C:/myWebPage' is owned by:
+        BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+        DESKTOP-HUV65FM/user1 (S-1-5-21-3768497000-3034080874-3593289040-1001)
+To add an exception for this directory, call:
+
+        git config --global --add safe.directory C:/myWebPage
+
+C:\myWebPage>git config --global --add safe.directory C:/myWebPage
+
+C:\myWebPage>git remote add origin https://github.com/skssg/FirstWebPage.git
