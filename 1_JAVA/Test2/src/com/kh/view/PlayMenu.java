@@ -185,13 +185,13 @@ public class PlayMenu {
             // 게임 결과 결정
             int outcome = random.nextInt(100); // 0부터 99까지의 난수 생성
 
-            if (outcome < 10) { // 10% 확률로 아웃
+            if (outcome < 40) { // 40% 확률로 아웃
                 System.out.println("결과: 아웃");
                 System.out.println("게임 종료");
                 break; // 게임 종료
-            } else if (outcome < 30) { // 20% 확률로 홈런
+            } else if (outcome < 10) { // 10% 확률로 홈런
                 System.out.println("결과: 홈런");
-            } else { // 나머지 70% 확률로 안타
+            } else { // 나머지 확률로 안타
                 System.out.println("결과: 안타");
             }
         }
