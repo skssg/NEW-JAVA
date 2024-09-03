@@ -16,3 +16,15 @@ To add an exception for this directory, call:
 C:\myWebPage>git config --global --add safe.directory C:/myWebPage
 
 C:\myWebPage>git remote add origin https://github.com/skssg/FirstWebPage.git
+
+
+
+gpt 사용법
+
+1.코드의 오탈자를 찾아줘
+-> 오탈자를 바로 찾아준다
+
+2.정확한 정보를 말해준다.
+키워드 구글링
+
+3. 간단한 sql(답이 정해진것을 질문하세용)
