@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .none-calculator{
+            background: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Practice2</h1>
@@ -27,6 +32,20 @@
             const num1 = Number(document.getElementById('number1').value);
             const num2 = Number(document.getElementById('number2').value);
 
+            if((operator === '/' || operator === '%') && num2 === 0){
+                resultInput.value = "연산불가";
+                resultInput.className = "none-calculator"
+            } else {
+                resultInput.className = "";
+                resultInput.value = calculator(operator, num1, num2);
+            }
+
+            const resultInput = document.getElementById("result");
+            resultInput.value = result;
+        }
+
+        
+        function calculator(operator, num1, num2) {
             let result;
             switch(operator){
                 case '+':
@@ -45,9 +64,6 @@
                     result = num1 % num2;
                     break;  
             }
-
-            const resultInput = document.getElementById("result");
-            resultInput.value = result;
         }
     </script>
 </body>

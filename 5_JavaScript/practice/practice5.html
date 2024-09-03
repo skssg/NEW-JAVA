@@ -11,7 +11,7 @@
     <form action="">
         <fieldset>
             <legend>회원가입</legend>
-            아이디 : <input type="text"> <br><br>
+            아이디 : <input type="text" onkeyup="checkId(this)"><span id="id-review"></span> <br><br>
             비밀번호 : <input type="password"> <br><br>
             비밀번호 확인 : <input type="password"> <br><br>
             이름 : <input type="text"> <br><br>
@@ -19,5 +19,19 @@
             <input type="submit" onclick="" value="회원가입">
         </fieldset>
     </form>
+
+    <script>
+        function checkId(_this){
+            /*
+            ‘user01’이라는 아이디만 저장되어 있다는 설정으로 두고
+            ‘user01’이 아니라면 아이디 필드 옆에 ‘사용 가능한 아이디입니다.’가 초록 글자로 뜨며
+            ‘user01’이면 ‘이미 존재하는 아이디입니다.’가 빨간 글자로 뜸
+            */
+
+            const idValue = _this.value;
+
+
+        }
+    </script>
 </body>
 </html>

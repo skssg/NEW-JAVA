@@ -134,7 +134,33 @@
             //name이 hobby인 모든 체크박스를 checked로변경
             const hobbyCheckBoxList = document.getElementsByName("hobby");
             for (let box of hobbyCheckBoxList){
-                box.checked = checked;
+                box.onchange = function(){
+                    const allCheckBox = document.getElementById('all-hobby-check-box');
+                    allCheckBox.checked = isAllHobbyChecked();
+                }
+            }
+        }
+
+        function isAllHobbyChecked(){
+            // 모든 체크박스가 체크가 되어있는지 검사 후
+            // 모두 체크 -> return true;
+            // 하나라도 아니라면 -> return false;
+
+            const hobbyCheckBoxList = document.getElementsByName("hobby");
+            for (let box of hobbyCheckBoxList){
+                if(!box.checked){
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        const hobbyCheckBoxList = document.getElementsByName("hobby");
+        for (let box of hobbyCheckBoxList){
+            box.onchange = function(){
+                const allCheckBox = document.getElementById('all-hobby-check-box');
+                allCheckBox.checked = isAllHobbyChecked();
             }
         }
     </script>
