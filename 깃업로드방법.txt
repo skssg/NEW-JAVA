@@ -28,3 +28,11 @@ gpt 사용법
 키워드 구글링
 
 3. 간단한 sql(답이 정해진것을 질문하세용)
+
+구글 폰트
+https://fonts.google.com/?query=noto
+
+아이콘
+https://www.flaticon.com/kr/
+https://cdnjs.com/libraries/font-awesome
+https://fontawesome.com/search
