@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
  * Servlet 같은 경우 반드시 contextPath뒤에 작성되어야한다.
  * http:localhost:5000/st/test1.do
  */
+//@webServlet("/test1.do")
 public class RequestGetServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
