@@ -29,4 +29,14 @@
     <servlet-name>enrollForm.me</servlet-name>
     <url-pattern>/enrollForm.me</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>list.th</display-name>
+    <servlet-name>list.th</servlet-name>
+    <servlet-class>ThumbnailListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>list.th</servlet-name>
+    <url-pattern>/list.th</url-pattern>
+  </servlet-mapping>
 </web-app>
