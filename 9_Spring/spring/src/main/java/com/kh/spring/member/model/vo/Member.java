@@ -25,6 +25,6 @@ public class Member {
 	private String phone;
 	private String address;
 	private Date enrollDate;
-	private Date midfyDate;
+	private Date modifyDate;
 	private String status;
 }
