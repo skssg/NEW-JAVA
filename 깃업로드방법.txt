@@ -17,7 +17,9 @@ C:\myWebPage>git config --global --add safe.directory C:/myWebPage
 
 C:\myWebPage>git remote add origin https://github.com/skssg/FirstWebPage.git
 
+2번째 방법 (강추)
 
+깃로그인 -> 깃 만들기(이때 이름만 쓰고 아무설정 건들지말기) -> 소스트리 접속 -> +버튼 누르고 Create누르고 탐색 눌러서 업로드할 폴더 넣기 -> 생성 후 원격 눌러서 추가 누르고 이름 origin쓰고 깃 주소 복사후 넣기 -> 커밋하기
 
 gpt 사용법
 
@@ -36,3 +38,7 @@ https://fonts.google.com/?query=noto
 https://www.flaticon.com/kr/
 https://cdnjs.com/libraries/font-awesome
 https://fontawesome.com/search
+
+깃에 업로드 된 파일 가져오기 
+
+서버를 따로 파서 file누르고 파일 가져오기 -> 업데이트 프로젝트 후 작업 시작
